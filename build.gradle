@@ -1,0 +1,48 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.5'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'io.learning'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation "org.springframework.boot:spring-boot-starter-actuator",
+			"org.springframework.boot:spring-boot-starter-aop",
+			"org.springframework.boot:spring-boot-starter-validation",
+			"org.springframework.boot:spring-boot-starter-webflux",
+			"org.springframework.boot:spring-boot-starter-data-r2dbc",
+			"org.flywaydb:flyway-core",
+			"org.springframework:spring-jdbc",
+			"io.swagger.core.v3:swagger-core:2.1.10",
+			"org.springdoc:springdoc-openapi-webflux-core:1.5.10",
+			"org.springdoc:springdoc-openapi-webflux-ui:1.5.10"
+
+	compileOnly "org.slf4j:slf4j-api",
+			"org.projectlombok:lombok:1.18.20"
+
+	developmentOnly "org.springframework.boot:spring-boot-devtools"
+
+	runtimeOnly "dev.miku:r2dbc-mysql",
+			"mysql:mysql-connector-java"
+
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'io.projectreactor:reactor-test'
+}
+
+test {
+	useJUnitPlatform()
+}
