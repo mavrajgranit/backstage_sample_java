@@ -11,4 +11,4 @@ spec:
   lifecycle: production
   owner: user:guest
   definition:
-    $text: https://raw.githubusercontent.com/mavrajgranit/backstage_sample_java/master/src/main/resources/openapi-spec.yaml
+    $text: https://github.com/mavrajgranit/backstage_sample_java/blob/master/src/main/resources/openapi-spec.yaml
