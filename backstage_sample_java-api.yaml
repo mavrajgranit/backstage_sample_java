@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: backstage-sample-java-api
+  name: notes-service-api
   description: The Notes-Service API
   tags:
     - notes-service
@@ -10,5 +10,6 @@ spec:
   type: openapi
   lifecycle: production
   owner: user:guest
+  system: notes-app
   definition:
     $text: https://github.com/mavrajgranit/backstage_sample_java/blob/master/src/main/resources/openapi-spec.yaml

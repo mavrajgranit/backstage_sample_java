@@ -6,4 +6,6 @@ metadata:
 spec:
   type: database
   owner: user:guest
+  dependencyOf:
+    - 'Component:notes-service'
   system: notes-app

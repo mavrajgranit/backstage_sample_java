@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: backstage-sample-java
+  name: notes-service
   description: Backstage Sample Java Project (Notes-Service)
   tags:
     - notes-service
@@ -11,6 +11,7 @@ spec:
   lifecycle: production
   owner: user:guest
   system: notes-app
-  dependsOn: ['resource:notes-db']
+  dependsOn:
+    - 'Resource:notes-db'
   providesApis:
-    - backstage-sample-java-api
+    - notes-service-api
