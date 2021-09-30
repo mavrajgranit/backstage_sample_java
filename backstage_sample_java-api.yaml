@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: backstage_sample_java
+  description: The Notes-Service API
+  tags:
+    - notes-service
+    - rest
+spec:
+  type: openapi
+  lifecycle: production
+  owner: user:guest
+  definition:
+    $text: https://raw.githubusercontent.com/mavrajgranit/backstage_sample_java/master/src/main/resources/openapi-spec.yaml

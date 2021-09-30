@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: backstage_sample_java
-  description: Backstage Sample Java Project
+  description: Backstage Sample Java Project (Notes-Service)
   tags:
     - java
 spec:
