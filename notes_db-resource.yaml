@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: notes-db
+  description: Stores Notes
+spec:
+  type: database
+  owner: user:guest
+  system: notes-app

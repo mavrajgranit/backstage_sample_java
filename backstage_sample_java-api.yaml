@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: backstage_sample_java
+  name: backstage-sample-java-api
   description: The Notes-Service API
   tags:
     - notes-service

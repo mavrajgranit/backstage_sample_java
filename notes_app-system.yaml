@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: notes-app
+  description: For managing Notes
+spec:
+  owner: user:guest
+  domain: notes
